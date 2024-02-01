@@ -101,6 +101,7 @@ button:hover {
     padding-left: 20px;
     padding-right: 20px ;
     justify-content: space-between;
+    overflow-x: scroll;
 }
 
 #studio>img{
