@@ -1,55 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-
-        const max = 99;
-        let AccountBalance = 0;
-        function Changeit(amount,operation){
-            if(operation == "+"){
-                AccountBalance += amount;
-            }
-            else if(operation == "-"){
-                AccountBalance -= amount;
-            }
-            else if(operation == "/"){
-                AccountBalance /= amount;
-            }
-            else if(operation == "*"){
-                AccountBalance *= amount;
-            }
-            console.log(AccountBalance);
-            if(AccountBalance == 0){
-                alert("You are poor!");
-            }
-        }
-
-    </script>
-    <title>Document</title>
-    <link rel="stylesheet" href="Day7.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MSSC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
-<body>
-    <p>Hello World!</p>
-    <button onclick="Changeit(2,'/')"
-    >Half</button>
-    <button onclick="Changeit(10,'-')"
-    >Subtract 10$</button>
-    <button onclick="Changeit(1,'-')"
-    >Subtract 1$</button>
-    <button onclick="
-    alert('You have $'+ AccountBalance)";
-    >Show Account Balance</button>
-    <button onclick="Changeit(1,'+')"
-    >Add 1$</button>
-    <button onclick="Changeit(10,'+')"
-    >Add 10$</button>
-    <button onclick="Changeit(2,'*')"
-    >Double</button>
-    <button onclick="Changeit(0,'*')"
-    >Reset</button>
 
+<body>
+
+    <header>
+        <div class="container">
+            <h1>MSSC Official Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="images">
+                <img src="MSSC.png" width="300vw"  height="300vw"  alt="Error">
+                <img src="HTU.png" width="300vw" height="300vw"  alt="Error">
+            </div>
+            <h2>Welcome to Our Website</h2>
+            <p>Empowering success through innovation and excellence.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to the visionary initiative of the Al Hussen Technical University (HTU) Engineering Design course!
+                Company XYZ is a simulated endeavor born out of the collaborative efforts of our enthusiastic team at HTU.
+                In this course, our goal is to embark on the journey of creating a product from scratch, establishing a
+                company, and ultimately bringing our creation to market.</p>
     
+            <p>As students passionate about engineering and design, we are immersed in the dynamic and challenging world
+                of product development. Company XYZ serves as the vessel through which we apply our theoretical knowledge
+                to real-world scenarios, gaining invaluable hands-on experience in the process.</p>
+    
+            <p>Driven by innovation and guided by our instructors, our mission is to conceptualize, design, and produce a
+                product that not only meets industry standards but also addresses a specific need in the market. Through
+                this simulation, we aim to cultivate skills in teamwork, project management, and the practical aspects of
+                bringing a product to fruition.</p>
+    
+            <p>Join us on this exciting journey as we navigate the intricacies of engineering design, entrepreneurship,
+                and business development. Together, let's turn ideas into reality and lay the foundation for a successful
+                company in the realm of technology and innovation.</p>
+        </div>
+    </section>
+   
+    <section id="XT Tool" class="XT Tool">
+
+        <div class="container2">
+            <h2>XT Cart</h2>
+            <p>The project aims to develop a cost-effective and portable device tailored for Jordanian households, addressing the specific need to transfer, lift, and position heavy objects like refillable 20-liter water bottles and reusable gas tanks. The device must adhere to a set of essential features and constraints, including compatibility with locally prevalent water bottles and gas tanks, maximum durability, lightweight design, minimal storage space requirements, low maintenance costs, user-friendly operation, safety, and manufacturability within the existing XT-Tools capabilities. The primary goal is to create a practical solution that is not only efficient in handling heavy items commonly found in Jordanian homes but is also affordable, user-friendly, and meets stringent durability and safety standards.</p>
+    
+            <p>The project involves designing a versatile cart with the capability to carry both water bottles and gas tanks. The cart is equipped with a lifting mechanism that allows it to elevate these items to a height of approximately 1 meter. </p>
+    
+            <p>After reaching the desired height, the cart possesses a flipping mechanism, enabling it to invert its load. This functionality serves a crucial purpose in distinguishing between water bottles and gas tanks. Once inverted, a sensor system is employed to identify the contents of the load. </p>
+    
+            <p>If the sensor detects a water bottle, the cart intelligently places it on a designated cooler. This innovative solution streamlines the process of transporting and sorting water bottles and gas tanks efficiently, demonstrating a practical and automated approach to handling different items in a specific environment.</p>
+        </div>
+        <div id="studio">
+            <img class="bordered" src="XT1.png" alt="Error" width="250vw"  height="400vw">
+            <img src="XT2.png" alt="Error" width="250vw"  height="400vw">
+            <img src="XT3.png" alt="Error" width="200vw"  height="400vw">
+            <img src="XT4.png" alt="Error" width="200vw"  height="400vw">
+            <img src="XT5.png" alt="Error" width="200vw"  height="400vw">
+            <img src="XT6.png" alt="Error" width="200vw"  height="400vw">
+
+        </div>
+    </section>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
